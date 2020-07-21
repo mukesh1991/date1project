@@ -1,0 +1,19 @@
+{% extends 'dateapp/master.html' %}
+<html>
+<head>
+    {% block title %}
+
+    <title> hour </title>
+   {% endblock %}
+</head>
+<body>
+{% block content %}
+    <h2> Different <b>Miniute </b> Formate -: </h2>
+    <h2> Minutes : <span>{{ now|date:"i" }}</span></h2>
+
+
+
+
+{% endblock %}
+</body>
+</html>

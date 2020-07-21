@@ -1,0 +1,18 @@
+{% extends 'dateapp/master.html' %}
+<html>
+<head>
+    {% block title %}
+    <title> hour </title>
+    {% endblock %}
+
+</head>
+<body>
+{% block content %}
+    <h2> Different <b>Week </b> Formate -: </h2>
+    <h2> Day of the week, 3 letters : <span>{{ now|date:"D" }}</span></h2>
+    <h2> Day of the week, long : <span>{{ now|date:"l" }}</span></h2>
+
+{% endblock %}
+</body>
+</body>
+</html>

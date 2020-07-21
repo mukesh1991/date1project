@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    <title>Title</title>
+    {% endblock %}
+
+</head>
+<body>
+<center>
+<style>
+    a{
+        padding-left: 10px; font-size: 30px;
+    }
+
+    h1{ font-size: 50px; font-family:  cursive; padding-bottom: 20px;
+        margin: auto; color: chartreuse; text-shadow: red 0 0 5px;
+    }
+    h2{
+        color: red;
+    }
+    body{
+        background-color: lightblue;
+    }
+</style>
+
+
+<h1> <u>Django Date and Time Formate</u> </h1>
+   <div>
+      <a href="/date/"> Date  </a>
+      <a href="/year/"> year  </a>
+      <a href="/month/"> month  </a>
+      <a href="/day/"> Day </a>
+      <a href="/week/"> Week </a>
+      <a href="/hour/"> Hour </a>
+      <a href="/min/"> Min </a>
+      <a href="/sec/"> Sec </a>
+    </div>
+
+{% block content %}
+
+{% endblock %}
+</center>
+</body>
+</html>

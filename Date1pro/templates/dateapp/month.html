@@ -1,0 +1,22 @@
+{% extends 'dateapp/master.html' %}
+<html>
+<head>
+    {% block title %}
+    <title> month</title>
+    {% endblock %}
+</head>
+<body>
+{% block content %}
+    <h2>Different <b>Month </b>  Formate :</h2>
+
+    <h2>Month, long : <span>{{ now|date:"F" }}</span></h2>
+    <h2>Month, 3 letters : <span>{{ now|date:"M" }}</span></h2>
+    <h2>Month, 2 lowercase : <span>{{ now|date:"b" }}</span></h2>
+    <h2>Month, 2 digit with leading zeros: <span>{{ now|date:"m" }}</span></h2>
+    <h2>Month, without leading zeros: <span>{{ now|date:"n" }}</span></h2>
+    <h2>No. of the day in the given months: <span>{{ now|date:"t" }}</span></h2>
+
+
+{% endblock %}
+</body>
+</html>

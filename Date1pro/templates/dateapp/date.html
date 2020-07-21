@@ -1,0 +1,24 @@
+{% extends 'dateapp/master.html' %}
+{% load l10n %}
+{% load tz %}
+
+<html>
+<head>
+    {% block title %}
+    <title> Date </title>
+    {% endblock %}
+</head>
+<body>
+{% block content %}
+    <h2> The Current<b> Date and Time </b> is : </h2>
+
+    <h2><span>{{ now }}</span></h2>
+    <h2><span>{{ now | date:"r" }}</span></h2>
+    <h2><span>{{ now | localize }}</span></h2>
+    <h2><span>{{ now | unlocalize }}</span></h2>
+    <h2><span>{{ now | localtime }}</span></h2>
+    <h2><span>{{ now | utc }}</span></h2>
+    <h2><span>It is the {% now "jS \o\f F" %}</span></h2>
+{% endblock %}
+</body>
+</html>

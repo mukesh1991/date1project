@@ -1,0 +1,16 @@
+{% extends 'dateapp/master.html' %}
+<html>
+<head>
+    {% block title %}
+    <title> year </title>
+    {% endblock %}
+</head>
+<body>
+{% block content %}
+    <h2> Different <b> Year </b> formate : </h2>
+    <h2>Year, 4 digits : <span>{{ now|date:"Y" }} </span></h2>
+    <h2>Year, 2 digits : <span>{{ now|date:"y" }} </span></h2>
+    <h2>It's leap year : <span>{{ now|date:"L" }} </span></h2>
+{% endblock %}
+</body>
+</html>

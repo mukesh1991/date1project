@@ -1,0 +1,22 @@
+{% extends 'dateapp/master.html' %}
+<html>
+<head>
+    {% block title %}
+    <title> hour </title>
+    {% endblock %}
+
+</head>
+<body>
+{% block content %}
+    <h2> Different <b>Hour </b> Formate -: </h2>
+    <h2> Hour, 24-HRS formate : <span>{{ now|date:"H" }}</span></h2>
+    <h2> Hour, 24-HRS formate without leading zeros : <span>{{ now|date:"G" }}</span></h2>
+    <h2> Hour, 12-HRS formate without leading zeros : <span>{{ now|date:"g" }}</span></h2>
+    <h2> Hour, 12-HRS formate : <span>{{ now|date:"h" }}</span></h2>
+    <h2>'a.m.' or 'p.m.':<span>{{ now|date:"a" }}</span></h2>
+     <h2>'AM' or 'PM': <span>{{ now|date:"A" }}</span></h2>
+    <h2>Time, in 12-hour formate hours and minutes : <span>{{ now|date:"f" }}</span></h2>
+
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,19 @@
+{% extends 'dateapp/master.html' %}
+<html>
+<head>
+    {% block title %}
+    <title> day </title>
+    {% endblock %}
+</head>
+<body>
+{% block content %}
+    <h2> Different <b> day </b> formate : </h2>
+    <h2> Day of the months  : <span> {{ now|date:"d" }}</span></h2>
+    <h2> Day of the months  : <span> {{ now|date:"j" }}</span></h2>
+    <h2> English ordinary suffix : <span> {{ now|date:"S" }}</span></h2>
+    <h2> Day of the week : <span> {{ now|date:"w" }}</span></h2>
+    <h2> Day of the year : <span> {{ now|date:"z" }}</span></h2>
+
+{% endblock %}
+</body>
+</html>
